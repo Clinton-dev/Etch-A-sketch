@@ -1,0 +1,18 @@
+.content {
+    height: 425px;
+    width: 425px;
+    margin : 0 auto;
+}
+
+.content div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.pixelated {
+    background-color: black;
+}
+
+.pixel:hover {
+    background-color: darkgrey;
+}
