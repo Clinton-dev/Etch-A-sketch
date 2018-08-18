@@ -13,10 +13,15 @@
      }
  }
 
- function pixelate(){
-      var pixel = document.querySelector('.pixel')
-      pixel.setAttribute('class', 'pixelated');
+ function pixelate(e){
+     /* var pixel = document.querySelector('.pixel')
+      pixel.setAttribute('class', 'pixelated');*/
+       var pixel = e.target;
+	pixel.classList.add('pixelated');
  }
  
  var allPixels = document.querySelectorAll('div');
  allPixels.forEach((e)=> e.addEventListener('mouseleave',pixelate));
+
+ 
+
