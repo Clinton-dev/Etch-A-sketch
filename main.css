@@ -9,10 +9,6 @@
     vertical-align: top;
 }
 
-.pixelated {
-    background-color: black;
-}
-
 .pixel:hover {
     background-color: darkgrey;
 }

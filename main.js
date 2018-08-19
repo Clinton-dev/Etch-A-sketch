@@ -1,5 +1,10 @@
  var content = document.querySelector('.content');
 
+ content.addEventListener('mouseover', function (event) {
+    if (event.target.className.toLowerCase() == "pixel") {
+        event.target.style.backgroundColor = 'black'
+    }})
+
  for( var i = 0; i <= 14; i++){
      //width
      for (let j = 0; j <= 16; j++) {
@@ -13,15 +18,7 @@
      }
  }
 
- function pixelate(e){
-     /* var pixel = document.querySelector('.pixel')
-      pixel.setAttribute('class', 'pixelated');*/
-       var pixel = e.target;
-	pixel.classList.add('pixelated');
- }
  
- var allPixels = document.querySelectorAll('div');
- allPixels.forEach((e)=> e.addEventListener('mouseleave',pixelate));
+ 
 
- 
 
