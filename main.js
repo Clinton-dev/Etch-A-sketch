@@ -5,7 +5,7 @@
     if (event.target.className.toLowerCase() == "pixel") {
         event.target.style.backgroundColor = 'black'
     }})
-
+ 
 function makeGrid(num){
  for( var i = 0; i <= num; i++){
      //width
