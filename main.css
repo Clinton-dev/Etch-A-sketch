@@ -8,3 +8,14 @@
     display: inline-block;
     vertical-align: top;
 }
+
+.reset {
+	width: 100px;
+	margin : 0 auto;
+	padding-bottom: 10px;
+}
+
+.pixel {
+	height:auto;
+	width: auto;
+}

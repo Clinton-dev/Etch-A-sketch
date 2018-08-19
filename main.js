@@ -1,3 +1,4 @@
+ const originalNum = 16;
  var content = document.querySelector('.content');
 
  content.addEventListener('mouseover', function (event) {
@@ -5,9 +6,10 @@
         event.target.style.backgroundColor = 'black'
     }})
 
- for( var i = 0; i <= 14; i++){
+function makeGrid(num){
+ for( var i = 0; i <= num; i++){
      //width
-     for (let j = 0; j <= 16; j++) {
+     for (let j = 0; j <= num; j++) {
          //height
          var div = document.createElement("div");
          div.style.width = "24.9px";
@@ -17,8 +19,21 @@
          div.classList.add('pixel');
      }
  }
+}
+ makeGrid(originalNum);
 
+ function resetGrid(){
+    while(content.firstChild){
+    content.removeChild(content.firstChild);
+    }
+    var askForSq = prompt('how many squares do you want in your grid');
+   makeGrid(askForSq);
+   //clearGrid();
+ } 
  
+ var resetBtn = document.querySelector('button');
+ resetBtn.addEventListener('click',resetGrid);
  
+ /*function clearGrid(){
 
-
+ }*/
